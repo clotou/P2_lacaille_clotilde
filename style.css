@@ -47,6 +47,7 @@ h1 {
 
 small {
   font-weight: 200;
+  font-size: 11px;
 }
 
 form {
@@ -89,7 +90,7 @@ form {
   margin: 15px 0;
   display: flex;
   justify-content: space-between;
-  width: 800px;
+  width: 650px;
   align-items: center;
   font-size: 12px;
   font-weight: 500;
@@ -116,13 +117,13 @@ form {
 }
 
 .fa-info {
-  font-size: 10px;
+  font-size: 8px;
   color: #0057ff;
-  width: 20px;
-  height: 15px;
+  width: 15px;
+  height: 11px;
   text-align: center;
-  padding-top: 5px;
-  border: 1px solid #dcdbdb;
+  padding-top: 3px;
+  border: 0.5px solid #dcdbdb;
   border-radius: 50%;
 }
 .text-info {
