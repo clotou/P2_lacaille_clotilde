@@ -30,13 +30,101 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: blue;
+  color: #0057ff;
 }
 .menu > p:hover:before {
   content: "";
-  background: blue;
+  background: #0057ff;
   width: 150px;
   height: 5px;
   top: 0;
   position: absolute;
+}
+
+h1 {
+  font-size: 15px;
+}
+
+small {
+  font-weight: 200;
+}
+
+form {
+  margin-top: 25px;
+}
+
+.search-bar {
+  display: flex;
+}
+
+.fa-map-marker-alt {
+  font-size: 13px;
+  width: 40px;
+  height: 26px;
+  text-align: center;
+  padding-top: 14px;
+  background-color: #f0e9e9;
+  border-radius: 12px 0 0 12px;
+}
+.input-search {
+  font-size: 12px;
+  height: 40px;
+  border-radius: 0;
+  border: 1px solid #f0e9e9;
+  padding-left: 10px;
+}
+
+.btn-search {
+  font-size: 12px;
+  color: white;
+  height: 40px;
+  text-align: center;
+  background-color: #0057ff;
+  border-radius: 0 12px 12px 0;
+  border: 0;
+  padding: 0 15px;
+}
+
+.filtres {
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.logo-filtre {
+  font-size: 13px;
+  color: #0057ff;
+  width: 29px;
+  height: 21px;
+  text-align: center;
+  padding-top: 9px;
+  background-color: #e3f1ff;
+  border: 1px solid #e3f1ff;
+  border-radius: 50%;
+}
+
+.btn-filtre {
+  border: 1px solid #dcdbdb;
+  border-radius: 50px 50px 50px 50px;
+}
+.btn-filtre > span {
+  margin: 0 15px 0 10px;
+}
+
+.fa-info {
+  font-size: 10px;
+  color: #0057ff;
+  width: 20px;
+  height: 15px;
+  text-align: center;
+  padding-top: 5px;
+  border: 1px solid #dcdbdb;
+  border-radius: 50%;
+}
+.text-info {
+  padding-left: 10px;
 }
