@@ -1,3 +1,6 @@
+body {
+  font-family: Karla, sans-serif;
+}
 .container {
   padding: 0 50px;
 }
@@ -20,6 +23,7 @@ nav {
   width: 150px;
   display: flex;
   justify-content: center;
+  font-weight: 200;
 }
 
 a {
@@ -28,7 +32,7 @@ a {
 a:hover {
   color: blue;
 }
-p:hover:before {
+.menu > p:hover:before {
   content: "";
   background: blue;
   width: 150px;
