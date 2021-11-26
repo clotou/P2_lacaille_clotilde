@@ -32,6 +32,10 @@ a {
 a:hover {
   color: #0057ff;
 }
+
+a:visited {
+  color: black;
+}
 .menu > p:hover:before {
   content: "";
   background: #0057ff;
@@ -64,14 +68,14 @@ form {
   height: 26px;
   text-align: center;
   padding-top: 14px;
-  background-color: #f0e9e9;
+  background-color: #f2f2f2;
   border-radius: 12px 0 0 12px;
 }
 .input-search {
   font-size: 12px;
   height: 40px;
   border-radius: 0;
-  border: 1px solid #f0e9e9;
+  border: 1px solid #f2f2f2;
   padding-left: 10px;
 }
 
@@ -128,4 +132,126 @@ form {
 }
 .text-info {
   padding-left: 10px;
+}
+
+.section-hebergements {
+  background-color: #f2f2f2;
+  border-radius: 18px;
+  padding: 10px 15px 10px 15px;
+  display: flex;
+  flex-direction: column;
+  max-width: 639px;
+}
+.section-hebergements > div > h1 {
+  margin: 25px 0 0 20px;
+}
+.section-bottom > p {
+  font-size: 12px;
+  margin: 18px 0 23px 20px;
+}
+.all-sections-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-section {
+  margin: 15px;
+  max-width: 173px;
+  height: 135px;
+  background-color: white;
+  border-radius: 16px;
+  padding: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.card-section-text {
+  padding: 5px;
+}
+.section-picture > img {
+  width: 173px;
+  height: 78px;
+  object-fit: cover;
+  border-radius: 14px 14px 0 0;
+}
+
+h2 {
+  font-size: 12px;
+  margin: 0;
+}
+
+.card-section-text > p {
+  font-weight: 300;
+  font-size: 10px;
+  margin: 4px 0 4px 0;
+}
+
+.range-section {
+  display: flex;
+  align-items: start;
+}
+.fa-star {
+  font-size: 8px;
+}
+.blue {
+  color: #0057ff;
+}
+.gray {
+  color: #dddada;
+}
+
+aside {
+  background-color: #f2f2f2;
+  border-radius: 18px;
+  padding: 10px 15px 0 15px;
+  display: flex;
+  flex-direction: column;
+  max-width: 310px;
+}
+aside > div > h1 {
+  margin: 25px 0 0 20px;
+}
+
+.fa-chart-line {
+  margin: 25px 20px 0 20px;
+}
+.aside-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-aside {
+  display: flex;
+  margin: 15px;
+  width: 270px;
+  height: 103px;
+  background-color: white;
+  border-radius: 16px;
+  padding: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.card-aside-text {
+  padding: 10px 0 5px 15px;
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.aside-picture > img {
+  width: 91px;
+  height: 103px;
+  object-fit: cover;
+  border-radius: 14px 0 0 14px;
+}
+.card-aside-text > div > p {
+  font-weight: 300;
+  font-size: 12px;
+  margin: 4px 0 4px 0;
+}
+.star-aside {
+  font-size: 9px;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
