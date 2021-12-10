@@ -2,10 +2,13 @@ body {
   font-family: Karla, sans-serif;
 }
 .container {
-  padding: 0 50px;
+  padding: 0 20px;
 }
+
+/* NAVBAR */
 nav {
   padding: 20px 0;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -20,7 +23,7 @@ nav {
 }
 
 .menu > p {
-  width: 150px;
+  width: 130px;
   display: flex;
   justify-content: center;
   font-weight: 200;
@@ -45,6 +48,7 @@ a:visited {
   position: absolute;
 }
 
+/* HEADER */
 h1 {
   font-size: 15px;
 }
@@ -112,12 +116,23 @@ form {
   border-radius: 50%;
 }
 
+.logo-filtre:hover {
+  background-color: #0057ff;
+  border: 1px solid #0057ff;
+  color: #e3f1ff;
+}
+
 .btn-filtre {
   border: 1px solid #dcdbdb;
   border-radius: 50px 50px 50px 50px;
 }
+
 .btn-filtre > span {
   margin: 0 15px 0 10px;
+}
+
+.btn-filtre > i {
+  margin: -1px;
 }
 
 .fa-info {
@@ -134,13 +149,16 @@ form {
   padding-left: 10px;
 }
 
+/* HEBERGEMENT */
+
 .section-hebergements {
   background-color: #f2f2f2;
   border-radius: 18px;
   padding: 10px 15px 10px 15px;
   display: flex;
   flex-direction: column;
-  max-width: 639px;
+  flex-basis: 66.5%;
+  width: 66.5%;
 }
 .section-hebergements > div > h1 {
   margin: 25px 0 0 20px;
@@ -151,12 +169,16 @@ form {
 }
 .all-sections-cards {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.herbergement-column {
+  width: 35%;
 }
 
 .card-section {
+  display: block;
   margin: 15px;
-  max-width: 173px;
   height: 135px;
   background-color: white;
   border-radius: 16px;
@@ -167,10 +189,14 @@ form {
   padding: 5px;
 }
 .section-picture > img {
-  width: 173px;
+  width: 100%;
   height: 78px;
   object-fit: cover;
   border-radius: 14px 14px 0 0;
+}
+
+.card-section:hover {
+  box-shadow: 0 0 15px rgba(10, 13, 221, 0.329);
 }
 
 h2 {
@@ -198,34 +224,48 @@ h2 {
   color: #dddada;
 }
 
+/* POPULAIRE */
 aside {
   background-color: #f2f2f2;
   border-radius: 18px;
-  padding: 10px 15px 0 15px;
+
   display: flex;
   flex-direction: column;
-  max-width: 310px;
+  flex-basis: 26%;
+  /* align-items: center; */
 }
-aside > div > h1 {
-  margin: 25px 0 0 20px;
+.aside-content {
+  display: flex;
+  flex-direction: column;
+}
+aside h1 {
+  margin: 25px 15px 15px 0px;
 }
 
 .fa-chart-line {
-  margin: 25px 20px 0 20px;
+  margin-top: 15px;
 }
 .aside-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 85%;
+  margin: auto;
 }
 
-.card-aside {
+.all-sections-cards-aside {
   display: flex;
-  margin: 15px;
-  width: 270px;
-  height: 103px;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  width: 80%;
+}
+.card-aside {
+  /* margin: auto; */
+  display: flex;
   background-color: white;
   border-radius: 16px;
+  margin-bottom: 40px;
   padding: 5px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
@@ -236,9 +276,16 @@ aside > div > h1 {
   flex-direction: column;
   justify-content: space-between;
 }
-.aside-picture > img {
-  width: 91px;
-  height: 103px;
+.aside-picture {
+  height: 100px;
+  width: 112px;
+  max-width: 44%;
+  border-radius: 15px 0 0 15px;
+  object-fit: cover;
+}
+.aside-picture img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 14px 0 0 14px;
 }
@@ -251,132 +298,95 @@ aside > div > h1 {
   font-size: 9px;
 }
 main {
-  max-width: 1162px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
+/* ACTIVITY */
 .activite-section {
   margin-top: 30px;
+  height: 30%;
+  width: 100%;
 }
 
 .all-activity-cards {
-  margin-top: 20px;
-  width: 1047px;
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-.activity-card-port > img {
-  width: 207px;
-  height: 274px;
-  object-fit: cover;
-  border-radius: 12px 12px 0 0;
+  width: 100%;
+  height: 300px;
+  position: relative;
 }
 
+.all-activity-cards a:hover {
+  box-shadow: 0 0 15px rgba(43, 8, 245, 0.2);
+}
+.column-activity {
+  width: 22%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.column-activity a {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  width: 100%;
+}
 h3 {
   font-size: 11px;
   margin-left: 15px;
-  padding-bottom: 15px;
+  padding-top: 5px;
 }
 
-.activity-card-port {
-  border-radius: 15px;
+.container-activity-text {
   background-color: white;
-  width: 207px;
-  height: 316px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  margin-right: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 0 15px rgb(0 0 0 / 20%);
 }
 
-.activity-card-fort > img {
-  width: 207px;
-  height: 115px;
-  object-fit: cover;
-  border-radius: 12px 12px 0 0;
+/* 1st activity */
+.container-port {
+  background: url(./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+  height: 100%;
 }
 
-.activity-card-fort {
-  border-radius: 12px;
-  background-color: white;
-  width: 207px;
-  height: 155px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  margin: 0 20px;
+/* 2nd activity */
+.container-fort {
+  background: url(./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+  height: 50%;
 }
 
-.activity-card-frioul > img {
-  width: 207px;
-  height: 90px;
-  object-fit: cover;
-  border-radius: 12px 12px 0 0;
-}
-.activity-card-frioul {
-  border-radius: 12px;
-  background-color: white;
-  width: 207px;
-  height: 135px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  margin: 0 10px;
+/* 3rd activity */
+.container-frioul {
+  background: url(./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+  height: 38%;
 }
 
-.activity-card-calanques > img {
-  width: 207px;
-  height: 274px;
-  object-fit: cover;
-  border-radius: 12px 12px 0 0;
+/* 4th activity */
+.container-calanques {
+  background: url(./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+  height: 100%;
 }
-.activity-card-calanques {
-  border-radius: 12px;
-  background-color: white;
-  width: 207px;
-  height: 316px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  margin: 0 20px;
+/* 5th activity */
+.container-ND {
+  background: url(./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+  height: 45%;
 }
-
-.activity-card-ND > img {
-  width: 207px;
-  height: 102px;
-  object-fit: cover;
-  border-radius: 12px 12px 0 0;
-}
-.activity-card-ND {
-  border-radius: 12px;
-  background-color: white;
-  width: 207px;
-  height: 145px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  margin-left: 20px;
-}
-.activity-card-longchamp > img {
-  width: 207px;
-  height: 102px;
-  object-fit: cover;
-  border-radius: 12px 12px 0 0;
-}
-.activity-card-longchamp {
-  border-radius: 12px;
-  background-color: white;
-  width: 207px;
-  height: 145px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  margin-left: 20px;
-}
-
-.fort-frioul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.ND-parc {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+/* 6th activity */
+.container-longchamp {
+  background: url(./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+  height: 48%;
 }
 
 footer {
@@ -384,16 +394,43 @@ footer {
   background-color: rgb(242 242 242);
   display: flex;
   align-items: start;
+  justify-content: space-between;
   padding: 30px;
-  /* flex-wrap: wrap; */
-  height: 90px;
   bottom: 0;
 }
 
 .footer-category {
-  margin-right: 220px;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
 }
 
-.footer-category > p {
+.footer-category li {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
   margin: 5px 0;
+  width: 100%;
+}
+
+/* Iphone 8 */
+@media screen and (min-width: 375px) and (max-width: 767px) {
+}
+
+/* Tablette */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .section-hebergements {
+    flex-basis: 100%;
+  }
+  aside {
+    margin-top: 15px;
+    flex-basis: 100%;
+    padding-bottom: 20px;
+  }
+  .all-sections-cards-aside {
+    flex-direction: row;
+  }
+  .card-aside {
+    height: 75%;
+  }
 }
