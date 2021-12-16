@@ -5,10 +5,14 @@ body {
   padding: 0 20px;
 }
 
+.fa-search {
+  display: none;
+}
 /* NAVBAR */
 nav {
-  padding: 20px 0;
-  width: 100%;
+  margin: auto;
+  width: 98%;
+  max-width: 1920px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -153,7 +157,11 @@ form {
 }
 
 /* HEBERGEMENT */
-
+.all-hebergements {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 .section-hebergements {
   background-color: #f2f2f2;
   border-radius: 18px;
@@ -336,7 +344,28 @@ main {
 .all-activity-cards a:hover {
   box-shadow: 0 0 15px rgba(43, 8, 245, 0.2);
 }
-.column-activity {
+.column-activity-1 {
+  width: 22%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.column-activity-2 {
+  width: 22%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.column-activity-3 {
+  width: 22%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.column-activity-4 {
   width: 22%;
   display: flex;
   flex-direction: column;
@@ -344,7 +373,7 @@ main {
   height: 100%;
 }
 
-.column-activity a {
+.all-activity-cards a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -354,6 +383,7 @@ main {
   border-radius: 12px;
   width: 100%;
 }
+
 h3 {
   font-size: 11px;
   margin-left: 15px;
@@ -435,11 +465,18 @@ ul {
 }
 
 /* MEDIA QUERIRES */
+/* Desktop */
+@media screen and (min-width: 992px) {
+  /* .fa-search {
+    display: none;
+  } */
+}
+
 /* Tablette */
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .fa-search {
+  /* .fa-search {
     display: none;
-  }
+  } */
   .section-hebergements {
     flex-basis: 100%;
   }
@@ -490,10 +527,11 @@ ul {
   .search h1 {
     text-align: center;
     font-size: 20px;
+    padding-top: 20px;
   }
   .search small {
     text-align: center;
-    font-size: 17px;
+    font-size: 15px;
   }
 
   .seach-bar {
@@ -508,6 +546,7 @@ ul {
   .btn-search {
     display: none;
   }
+
   .fa-search {
     font-size: 22px;
     text-align: center;
@@ -521,8 +560,129 @@ ul {
     padding: 10px 10px 0 10px;
   }
 
-  .filtres {
+  .filtre-list {
     display: flex;
     flex-wrap: wrap;
+  }
+  .section-hebergements {
+    flex-basis: 100%;
+  }
+  .all-hebergements {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .all-info > small {
+    display: block;
+  }
+  .container {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+  /* POPULAIRE */
+  aside {
+    border-radius: 0px;
+    width: 100%;
+  }
+
+  .fa-chart-line {
+    margin-top: 15px;
+  }
+  .aside-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+  }
+  .card-aside {
+    margin-bottom: 10px;
+  }
+  .all-sections-cards-aside {
+    width: 90%;
+  }
+  .section-hebergements {
+    background-color: white;
+    padding: 0;
+  }
+  .section-top {
+    margin-left: 10px;
+  }
+
+  .all-sections-cards {
+    flex-direction: column;
+  }
+  .all-hebergements {
+    width: 100%;
+  }
+  .herbergement-column {
+    width: 100%;
+  }
+  .section-content {
+    margin: 0 10px;
+  }
+  .card-section {
+    margin-bottom: 10px;
+  }
+
+  .activite-section {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+  }
+  .activite-section h1 {
+    margin-bottom: 15px;
+    height: 100%;
+  }
+  .all-activity-cards {
+    display: inline-block;
+  }
+  .card-section {
+    width: 100%;
+  }
+  .column-activity-1 {
+    width: 100%;
+    height: 50%;
+  }
+  .column-activity-2 {
+    width: 100%;
+  }
+  .column-activity-3 {
+    width: 100%;
+    height: 50%;
+  }
+  .column-activity-4 {
+    width: 100%;
+  }
+  /* 1st activity */
+  .container-port {
+    height: 100%;
+    margin-bottom: 15px;
+  }
+  /* 2nd activity */
+  .container-fort {
+    height: 100%;
+    margin-bottom: 15px;
+  }
+  /* 3rd activity */
+  .container-frioul {
+    height: 100%;
+    margin-bottom: 15px;
+  }
+  /* 4th activity */
+  .container-calanques {
+    height: 100%;
+    margin-bottom: 15px;
+  }
+  /* 5th activity */
+  .container-ND {
+    height: 100%;
+    margin-bottom: 15px;
+  }
+  /* 6th activity */
+  .container-longchamp {
+    height: 100%;
+    margin-bottom: 15px;
   }
 }
