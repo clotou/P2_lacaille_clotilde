@@ -104,11 +104,18 @@ form {
 .filtres {
   margin: 15px 0;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+
   width: 650px;
-  align-items: center;
+
   font-size: 12px;
   font-weight: 500;
+}
+.all-filtres {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .logo-filtre {
@@ -132,6 +139,7 @@ form {
 .btn-filtre {
   border: 1px solid #dcdbdb;
   border-radius: 50px 50px 50px 50px;
+  margin-left: 20px;
 }
 
 .btn-filtre > span {
@@ -467,16 +475,16 @@ ul {
 /* MEDIA QUERIRES */
 /* Desktop */
 @media screen and (min-width: 992px) {
-  /* .fa-search {
+  .fa-search {
     display: none;
-  } */
+  }
 }
 
 /* Tablette */
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  /* .fa-search {
+  .fa-search {
     display: none;
-  } */
+  }
   .section-hebergements {
     flex-basis: 100%;
   }
@@ -497,7 +505,7 @@ ul {
 }
 
 /* Iphone 8 */
-@media screen and (min-width: 300px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 767px) {
   nav {
     display: flex;
     flex-direction: column;
@@ -547,6 +555,9 @@ ul {
     display: none;
   }
 
+  .all-filtres {
+    flex-wrap: wrap;
+  }
   .fa-search {
     font-size: 22px;
     text-align: center;

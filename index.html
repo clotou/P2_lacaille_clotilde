@@ -2,6 +2,8 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>P2_Booki</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,36 +36,49 @@
               <div><i class="fas fa-map-marker-alt"></i></div>
               <div><input type="search" name="city" value="Marseille, France" class="input-search"/></div>
               <div>
-                <!-- <i class="fas fa-search"></i> -->
+                <i class="fas fa-search"></i>
                 <input type="submit" value="Rechercher" class="btn-search"/>
               </div>
             </div>
           </form>
 
-          <div name="filtre-tags" class="filtres">
+          <div class="filtres">
             <p>Filtres</p>
-              <!--econommic tag-->
-                <p class="btn-filtre"><i class="fas fa-money-bill-wave logo-filtre"></i>
-                <span>Économique</span>
-                </p>
-              <!--familly tag-->
-                <p class="btn-filtre"><i class="fas fa-child logo-filtre"></i>
-                <span>Familial</span>
-                </p>
-              <!--romantic tag-->
-                <p class="btn-filtre"><i class="fas fa-heart logo-filtre"></i>
-                <span>Rommantique</span>
-                </p>
-              <!--animal tag-->
-                <p class="btn-filtre"><i class="fas fa-dog logo-filtre"></i>
-                <span>Animaux autorisés</span>
-                </p>
+            <div class="all-filtres">
+                <!--econommic tag-->
+                  <p class="btn-filtre"><i class="fas fa-money-bill-wave logo-filtre"></i>
+                  <span>Économique</span>
+                  </p>
+                <!--familly tag-->
+                  <p class="btn-filtre"><i class="fas fa-child logo-filtre"></i>
+                  <span>Familial</span>
+                  </p>
+                <!--romantic tag-->
+                  <p class="btn-filtre"><i class="fas fa-heart logo-filtre"></i>
+                  <span>Rommantique</span>
+                  </p>
+                <!--animal tag-->
+                  <p class="btn-filtre"><i class="fas fa-dog logo-filtre"></i>
+                  <span>Animaux autorisés</span>
+                  </p>
+            </div>
+
+          </div>
                 <!-- </div> -->
-          </div class="all-info">
-          <p><i class="fas fa-info"></i><small class="text-info">Plus de 500 logements sont disponibles
-            dans cette ville</small></p>
+          <div class="all-info">
+            <p>
+              <i class="fas fa-info"></i>
+              <small class="text-info">Plus de 500 logements sont disponibles
+              dans cette ville</small>
+            </p>
+
+          </div>
+
+
         </div>
+
       </header>
+
       <main>
 
         <div class="all-hebergements">
