@@ -31,19 +31,15 @@
         <div class="search">
           <h1>Trouvez votre hébergemment pour des vacances de rêve</h1>
           <small>En plein centre ville ou en pleine nature</small>
-          <form action="#" method="post">
-            <div class="search-bar">
-              <div><i class="fas fa-map-marker-alt"></i></div>
-              <div><input type="search" name="city" value="Marseille, France" class="input-search"/></div>
-              <div>
-                <i class="fas fa-search"></i>
-                <input type="submit" value="Rechercher" class="btn-search"/>
-              </div>
-            </div>
-          </form>
+          <div class="search-interface">
+            <i class="fas fa-map-marker-alt"></i>
+            <input type="text" placeholder="Marseille, France">
+            <button type="button" class="rechercher">Rechercher</button>
+            <button type="button" class="loupe"><i class="fas fa-search"></i></button>
+          </div>
 
           <div class="filtres">
-            <p>Filtres</p>
+            <p class="filtre-title">Filtres</p>
             <div class="all-filtres">
                 <!--econommic tag-->
                   <p class="btn-filtre"><i class="fas fa-money-bill-wave logo-filtre"></i>
@@ -66,12 +62,13 @@
           </div>
                 <!-- </div> -->
           <div class="all-info">
-            <p>
+            <div class="info-logo">
               <i class="fas fa-info"></i>
-              <small class="text-info">Plus de 500 logements sont disponibles
+            </div>
+            <div class="text-info">
+              <small>Plus de 500 logements sont disponibles
               dans cette ville</small>
-            </p>
-
+            </div>
           </div>
 
 
