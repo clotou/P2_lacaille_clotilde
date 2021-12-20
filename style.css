@@ -14,6 +14,8 @@ body {
   flex-direction: row;
   flex-wrap: nowrap;
   padding-bottom: 20px;
+  max-width: 710px;
+  margin-top: 10px;
 }
 
 .search-interface i {
@@ -185,7 +187,10 @@ form {
 .btn-filtre > i {
   margin: -1px;
 }
-
+.all-info {
+  display: flex;
+  margin-bottom: 10px;
+}
 .fa-info {
   font-size: 8px;
   color: #0065fc;
@@ -521,19 +526,17 @@ ul {
   .fa-search {
     display: none;
   }
+  .all-hebergements {
+    flex-wrap: wrap;
+  }
   .section-hebergements {
-    flex-basis: 100%;
-  }
-  aside {
-    margin-top: 15px;
-    flex-basis: 100%;
-    padding-bottom: 20px;
-  }
-  .all-sections-cards-aside {
-    width: 55%;
+    margin-bottom: 20px;
   }
   .card-aside-text {
-    margin-left: 70px;
+    margin-left: 50px;
+  }
+  #coeur-de-leau {
+    height: 130%;
   }
   .aside-picture img {
     width: 160%;
@@ -610,18 +613,8 @@ ul {
     font-size: 17px;
     display: block;
     font-weight: 300;
-    margin-bottom: 12px;
   }
 
-  /* .fa-map-marker-alt {
-    width: 50px;
-
-    height: 26px;
-    text-align: center;
-    padding-top: 14px;
-    background-color: #f2f2f2;
-    border-radius: 12px 0 0 12px;
-  } */
   .seach-bar {
     display: flex;
     align-items: center;
@@ -692,6 +685,7 @@ ul {
   .all-info {
     display: flex;
     margin-left: 12px;
+    margin-bottom: 0px;
   }
   .info-logo {
     font-size: 18px;
@@ -724,10 +718,7 @@ ul {
     font-size: 18px;
     margin-left: 12px;
   }
-  /*
-  .all-info > i {
-    display: block;
-  } */
+
   .container {
     width: 100%;
     padding: 0px;
