@@ -1,8 +1,20 @@
+* {
+  margin: 0;
+}
 body {
   font-family: "Raleway", sans-serif;
 }
 .container {
   padding: 0 20px;
+  margin-top: 20px;
+}
+
+.search h1 {
+  margin-top: 20px;
+  font-weight: 500;
+}
+.search small {
+  margin-top: 10px;
 }
 
 .loupe2 {
@@ -375,111 +387,100 @@ main {
 }
 
 /* ACTIVITY */
-.activite-section {
-  margin-top: 30px;
-  height: 30%;
+/* Activités */
+
+.activities h2 {
+  font-size: 15px;
+  padding: 10px 10px 10px 10px;
+}
+
+.activities-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.vieux-port,
+.calanques {
+  width: 22%;
+  border-radius: 20px;
+  box-shadow: 0 0 5px #b1b1b1;
+  height: 600px;
+}
+
+.vieux-port img,
+.calanques img {
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+  width: 100%;
+  height: 92.5%;
+}
+
+.pomegues-frioul,
+.dame-longchamp {
+  width: 22%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pomegues-frioul a,
+.dame-longchamp a {
+  display: block;
+}
+
+.fort-pomegues,
+.frioul,
+.notre-dame,
+.longchamp {
+  border-radius: 20px;
+  box-shadow: 0 0 5px #b1b1b1;
+}
+
+.fort-pomegues img,
+.frioul img,
+.notre-dame img,
+.longchamp img {
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
   width: 100%;
 }
 
-.all-activity-cards {
-  display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 100%;
-  height: 300px;
-  position: relative;
+.fort-pomegues {
+  height: 330px;
 }
 
-.all-activity-cards a:hover {
-  box-shadow: 0 0 15px rgba(43, 8, 245, 0.2);
-}
-.column-activity-1 {
-  width: 22%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-}
-.column-activity-2 {
-  width: 22%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-}
-.column-activity-3 {
-  width: 22%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-}
-.column-activity-4 {
-  width: 22%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
+.frioul {
+  height: 230px;
 }
 
-.all-activity-cards a {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  border-radius: 12px;
-  width: 100%;
+.fort-pomegues img {
+  height: 85%;
 }
 
-h3 {
+.frioul img {
+  height: 80%;
+}
+
+.notre-dame {
+  height: 280px;
+}
+
+.longchamp {
+  height: 280px;
+}
+
+.notre-dame img {
+  height: 83.5%;
+}
+
+.longchamp img {
+  height: 83.5%;
+}
+
+.activities-cards a h3 {
   font-size: 11px;
-  margin-left: 15px;
-  padding-top: 5px;
-}
-
-.container-activity-text {
-  background-color: white;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  border-radius: 0 0 12px 12px;
-  box-shadow: 0 0 15px rgb(0 0 0 / 20%);
-}
-
-/* 1st activity */
-.container-port {
-  background: url(./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
-  height: 100%;
-}
-
-/* 2nd activity */
-.container-fort {
-  background: url(./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
-  height: 50%;
-}
-
-/* 3rd activity */
-.container-frioul {
-  background: url(./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
-  height: 38%;
-}
-
-/* 4th activity */
-.container-calanques {
-  background: url(./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
-  height: 100%;
-}
-/* 5th activity */
-.container-ND {
-  background: url(./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
-  height: 45%;
-}
-/* 6th activity */
-.container-longchamp {
-  background: url(./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
-  height: 48%;
+  padding: 10px 10px 10px 10px;
 }
 
 footer {
@@ -580,7 +581,7 @@ ul {
     width: 100%;
     height: 3px;
     position: absolute;
-    top: 120px;
+    top: 80px;
     z-index: -1;
   }
   .menu {
@@ -597,16 +598,17 @@ ul {
   .menu > p:active:before {
     content: "";
     background: #0065fc;
-    width: 135px;
+    width: 50%;
     height: 3px;
-    top: 120px;
+    top: 80px;
     position: absolute;
     z-index: 0;
   }
 
   .search h1 {
     font-size: 22px;
-    padding-top: 20px;
+    font-weight: 600;
+    padding-top: 40px;
     margin-left: 12px;
   }
   .search small {
@@ -686,6 +688,7 @@ ul {
     display: flex;
     margin-left: 12px;
     margin-bottom: 0px;
+    align-items: center;
   }
   .info-logo {
     font-size: 18px;
@@ -770,65 +773,56 @@ ul {
     margin-bottom: 10px;
   }
 
-  .activite-section {
+  main {
+    display: unset;
+  }
+  .activities-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pomegues-frioul,
+  .dame-longchamp {
+    display: flex;
+    align-items: center;
     width: 90%;
-    margin: auto;
-    margin-top: 20px;
   }
-  .activite-section h1 {
-    margin-bottom: 15px;
-    height: 100%;
+
+  .vieux-port,
+  .calanques {
+    width: 90%;
+    height: 150px;
+    margin-bottom: 10px;
   }
-  .all-activity-cards {
-    display: inline-block;
-  }
-  .card-section {
+
+  .fort-pomegues,
+  .frioul,
+  .longchamp,
+  .notre-dame {
     width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
   }
-  .column-activity-1 {
-    width: 100%;
-    height: 50%;
+
+  .vieux-port img,
+  .calanques img,
+  .fort-pomegues img,
+  .notre-dame img,
+  .longchamp img {
+    height: 80%;
   }
-  .column-activity-2 {
-    width: 100%;
+
+  .activities-cards a h3 {
+    padding: unset;
+    padding-left: 10px;
+    padding-top: 5px;
   }
-  .column-activity-3 {
-    width: 100%;
-    height: 50%;
+
+  .activities h2 {
+    padding: 20px 10px 10px 20px;
   }
-  .column-activity-4 {
-    width: 100%;
-  }
-  /* 1st activity */
-  .container-port {
-    height: 100%;
-    margin-bottom: 15px;
-  }
-  /* 2nd activity */
-  .container-fort {
-    height: 100%;
-    margin-bottom: 15px;
-  }
-  /* 3rd activity */
-  .container-frioul {
-    height: 100%;
-    margin-bottom: 15px;
-  }
-  /* 4th activity */
-  .container-calanques {
-    height: 100%;
-    margin-bottom: 15px;
-  }
-  /* 5th activity */
-  .container-ND {
-    height: 100%;
-    margin-bottom: 15px;
-  }
-  /* 6th activity */
-  .container-longchamp {
-    height: 100%;
-    margin-bottom: 15px;
-  }
+
   footer {
     flex-direction: column;
   }
