@@ -4,6 +4,15 @@
 body {
   font-family: "Raleway", sans-serif;
 }
+a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  text-decoration: none;
+  color: #000 !important;
+}
 .container {
   padding: 0 20px;
   margin-top: 20px;
