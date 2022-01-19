@@ -459,6 +459,14 @@ main {
   width: 100%;
 }
 
+.vieux-port:hover,
+.fort-pomegues:hover,
+.frioul:hover,
+.calanques:hover,
+.notre-dame:hover,
+.longchamp:hover {
+  box-shadow: 0 0 15px rgba(10, 13, 221, 0.329);
+}
 .fort-pomegues {
   height: 162px;
 }
