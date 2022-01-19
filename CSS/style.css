@@ -559,14 +559,19 @@ ul {
   .section-hebergements {
     margin-bottom: 20px;
   }
-  .card-aside-text {
-    margin-left: 50px;
+  .aside-content {
+    width: 80%;
+    margin: auto;
   }
-  #coeur-de-leau {
-    height: 130%;
+  .card-aside-text {
+    margin-left: 80px;
   }
   .aside-picture img {
     width: 160%;
+  }
+  .all-hebergements {
+    display: block;
+    width: 100%;
   }
 }
 
