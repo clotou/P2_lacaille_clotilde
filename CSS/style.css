@@ -571,7 +571,7 @@ ul {
 }
 
 /* Iphone 8 */
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (min-width: 0px) and (max-width: 767px) {
   .loupe {
     display: unset;
     border: 1px solid #f2f2f2;
