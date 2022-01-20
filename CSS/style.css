@@ -394,11 +394,6 @@ aside span {
 .star-aside {
   font-size: 9px;
 }
-main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
 
 /* ACTIVITY */
 /* Activités */
@@ -809,6 +804,7 @@ ul {
   main {
     display: unset;
   }
+
   .activities-cards {
     display: flex;
     flex-direction: column;
