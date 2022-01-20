@@ -622,8 +622,10 @@ ul {
   .menu a {
     font-weight: 500;
   }
-  .menu a:active {
-    color: #0065fc;
+
+  .menu > p:hover:before {
+    content: "";
+    background: transparent;
   }
   .menu > p:active:before {
     content: "";
